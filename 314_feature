@@ -128,6 +128,9 @@ main = Tk()
 main.title("Group D's Story Telling Show")
 main.config(bg="skyblue")
 
+bgimg = PhotoImage(file="Resources/mainbg.png")
+limg= Label(main, image=bgimg)
+limg.place(x=0, y=0)
 
 
 #image
@@ -135,8 +138,11 @@ frame1 = Frame(main, width=650, height=400, bg='grey')
 frame1.grid(row=0, column=0, padx=10, pady=5)
 
 #startshowbtn
-frame2 = Frame(main, width=650, height=400, bg="grey") 
+frame2 = Frame(main, width=650, height=400, highlightbackground="grey", highlightthickness=5) 
 frame2.grid(row=0, column=1, padx=10, pady=5)
+bgimg2 = PhotoImage(file="Resources/framebg.png")
+limg2= Label(frame2, image=bgimg2)
+limg2.place(x=0, y=0)
 
 #allimagebuttons
 frame3 = Frame(main, width=100, height=400, bg="grey")

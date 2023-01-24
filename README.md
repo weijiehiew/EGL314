@@ -9,5 +9,5 @@ Our feature is about a captivating story of a couple's journey together as a pai
 
 We want to showcase the emotions and feelings of the story through lights and audio, and having the visuals from our very own pixelated images displayed out to the Pixel Tint Panel.
 <br>
-In this generation, many audiences are more drawn to drama and films these days which includes romantic genre's mostly. Hence, we want our audiences, teenagers and adults from 13-21 year old to witness our show, and for them to either relate to or just appreciate at the end of it.
+In this generation, many audiences are more drawn to drama and films these days which majority includes romantic genre's. Hence, we want our audiences, teenagers and adults from 13-21 year old to witness our show, and for them to either relate to or just appreciate at the end of it.
 
