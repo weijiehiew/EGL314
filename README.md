@@ -10,4 +10,14 @@ Our feature is about a captivating story of a couple's journey together as a pai
 We want to showcase the emotions and feelings of the story through lights and audio, and having the visuals from our very own pixelated images displayed out to the Pixel Tint Panel.
 <br>
 In this generation, many audiences are more drawn to drama and films these days which majority includes romantic genre's. Hence, we want our audiences, teenagers and adults from 13-21 year old to witness our show, and for them to either relate to or just appreciate at the end of it.
+## What our feature consist of:
+**Main GUI** 
+- Our GUI shows all of the images that will be displayed on the show starting from image 1 to image 16.
+- Each image is a button. When button pressed individually **(right frame)**, the image will appear on the blank canvas **(left frame)**, and will send out the image on the polarizer
+![alt text](diagram/Show_GUI.png)
+*Screenshot of our GUI*
+
+<br>
+
+
 
