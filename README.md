@@ -14,11 +14,24 @@ We want to showcase the emotions and feelings of the story through lights and au
 ## What our feature consist of:
 **Main GUI** 
 - Our GUI shows all of the images that will be displayed on the show starting from image 1 to image 16.
-- Each image is a button. When button pressed individually **(right frame)**, the image will appear on the blank canvas **(left frame)**, and will send out the image on the polarizer
+- Each image is a button. When button pressed individually **(right frame)**, the image will appear on the blank canvas **(left frame)**, and will send out the image on the polarizer.
+![alt text](diagram/Panel.jpg)
+*Picture of the Polarizer Panel*
+- At the bottom, we have the "Start Show" button which is a command that will automatically send all 16 images in a sequence of 15 seconds delay for each image.
 ![alt text](diagram/Show_GUI.png)
 *Screenshot of our GUI*
 
 <br>
 
+## Components
+---
+| No. | Equipment |
+| ----------- | ----------- |
+| 1. | Raspberry Pi 4 |
+| 2. |  XLR-M to 3.5mm-M stereo |
+| 3. |  Avolites Lighting Console |
+| 4. |  Mixer |
+| 5. |  Audio Amplifier |
+| 6. |  Speakers Line Array |
 
 
