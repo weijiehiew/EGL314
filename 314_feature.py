@@ -1,24 +1,25 @@
 from tkinter import *
 import time
+import sendtopolarizer
 from PIL import Image, ImageOps
+from student_pub import *
+from pydub import AudioSegment
+from pydub.playback import play
+import threading
 
-# import time
-# import paho.mqtt.client as mqtt
+t1 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s1i1.wav')
+t2 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s1i2.wav')
+t4 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s2i3notif.wav')
+t5 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s2i3type.wav')
+t6 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s2i4.wav')
+t7 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s3.wav')
+t8 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s3i5.wav')
+t9 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s5i9.wav')
+t10 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s5i12.wav')
+t11 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s7i14.wav')
 
-# def on_publish(client, userdata, mid):
-#     print("message published")
 
-# def pubpic(output):
-#     k = output
-#     msg = str(k)
-#     pubMsg = client.publish(
-#         topic='studentpi/team4', #Please change according to your respective Group  
-#         payload=msg.encode('utf-8'),
-#         qos=0,
-#     )
-
-#     pubMsg.wait_for_publish()
-#     print(pubMsg.is_published())
+t3 = AudioSegment.from_wav('/home/pi/Desktop/Resources/s2i3bgm.wav')
 
 def img_change(m):
     ## open image file
@@ -26,102 +27,661 @@ def img_change(m):
                 img1 = PhotoImage(file="Resources/1.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/1.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==2:
                 img1 = PhotoImage(file="Resources/2.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/2.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==3:
                 img1 = PhotoImage(file="Resources/3.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/3.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==4:
                 img1 = PhotoImage(file="Resources/4.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/4.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==5:
                 img1 = PhotoImage(file="Resources/5.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/5.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==6:
                 img1 = PhotoImage(file="Resources/6.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/6.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==7:
                 img1 = PhotoImage(file="Resources/7.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/7.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==8:
                 img1 = PhotoImage(file="Resources/8.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/8.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
+                
         elif m ==9:
                 img1 = PhotoImage(file="Resources/9.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/9.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==10:
                 img1 = PhotoImage(file="Resources/10.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/10.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==11:
                 img1 = PhotoImage(file="Resources/11.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/11.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==12:
                 img1 = PhotoImage(file="Resources/12.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/12.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==13:
                 img1 = PhotoImage(file="Resources/13.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/13.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==14:
                 img1 = PhotoImage(file="Resources/14.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/14.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==15:
                 img1 = PhotoImage(file="Resources/15.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/15.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         elif m ==16:
                 img1 = PhotoImage(file="Resources/16.png")
                 label.configure(image=img1)
                 label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/Desktop/Resources/16.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
         else:
                 img1 = PhotoImage(file="Resources/blank.png")
                 label.configure(image=img1)
                 label.image = img1
 
 def startshow():
-        # pictures = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']
+        pictures = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']
 
-        # for i in range(16):
-        #         path3 = '/home/pi/Desktop/Resources/' + pictures[i] + '.png'
-        #         #path2 = Image.open(path3)
-        #         sendstopolarizer.middleman(Images = path3)
-        #         #path2 = Image.open('cartoon.png')
-        #         print(path3)
-        #         if i == 1 or i == 5 or i == 9:
-        #                 time.sleep(5)
-        #         else:
-        #                 time.sleep(15)
-        myImage = Image.open('Resources/1.png')
-        myImage.show()
+    
+        o = threading.Thread(target=play, args=(t3,))
 
-        ## greyscale image file
-        greyImage = ImageOps.grayscale(myImage)
-        #greyImage.show()
+        three_seconds = 3 * 1000
+        slice = t4[:three_seconds]
 
-        ## Limiting to 8 shades of greyscale colour
-        greyQuantize = greyImage.quantize(8)
-        #greyQuantize.show()
+        add = slice + t5
 
-        ## resize to 32 x 32 pixels
-        smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
-        #smallImage.show()
-
-        ## Blow it back up to original photo size (32 x 32 pixels upscale)
-        resultImage = smallImage.resize(myImage.size, Image.NEAREST)
-        resultImage.show()
+        for i in range(16):
+            path3 = '/home/pi/Desktop/Resources/' + pictures[i] + '.png'
+            #path2 = Image.open(path3)
+            sendtopolarizer.middleman(Images = path3)
+            #path2 = Image.open('cartoon.png')
+            print(path3)
+            if i == 1:
+                play(t1)
+                time.sleep(10)
+            elif i == 2:
+                time.sleep(10)
+                play(t2)
+            elif i == 3:
+                time.sleep(10)
+                o.start()
+                play(add)
+            elif i == 4:
+                time.sleep(10)
+                play(t6)
+            elif i == 5:
+                time.sleep(10)
+                play(t8)
+            elif i == 9:
+                time.sleep(10)
+                play(t9)
+            elif i == 12:
+                time.sleep(10)
+                play(t10)
+            elif i == 14:
+                time.sleep(10)
+                play(t11)
+            else:
+                time.sleep(15)
+        
 
 
 main = Tk()
