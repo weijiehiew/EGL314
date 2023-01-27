@@ -30,7 +30,7 @@ We want to showcase the emotions and feelings of the story through lights and au
 | 1. | Raspberry Pi 4 |
 | 2. |  XLR-M to 3.5mm-M stereo |
 | 3. |  Avolites Lighting Console |
-| 4. |  Mixer |
+| 4. |  Yamaha QL1 Mixer |
 | 5. |  Audio Amplifier |
 | 6. |  Speakers Line Array |
 
