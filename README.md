@@ -120,11 +120,18 @@ Select ` P3 VNC`
 
 ## VNC Viewer
 
->VNC is used to access the pi remotely.<br>
-File>New Connection <br>
+>VNC is used to access the pi remotely.
+<br>
+File>New Connection 
+<br>
 Add your raspberry pi's IPv4 and name
-![Alt text](diagram/VNCViewer.png)<br>
+
+![Alt text](diagram/VNCViewer.png)
+
+<br>
+
 *VNC Viewer*
+
 <br>
 Now after connecting, we have successfully established remote control to the raspberry pi. 
 
@@ -153,19 +160,19 @@ Now after connecting, we have successfully established remote control to the ras
 *Picture of the Amplifier*
 
 ---
-To create our show background sound, we installed the software **Audacity**
+To create our show background track, we installed the software **Audacity**
 <br>
 
 ![alt text](diagram/audacityaudio.jpg)<br>
 *Screenshot of all our wav files commpiled into timelines*
 <br>
-- The first timeline is our voice story narrator where we used a text to speech feature from an online website called **NaturalReaders**
-- The second timeline consists of the Background Music instrumentals throughout the duration
+- The first track is our voice story narrator where we used a text to speech feature from an online website called **NaturalReaders**
+- The second track and third track consists of the Background Music instrumentals throughout the duration
 - The third timeline compiles all of our sound effects<br>
 <br>
 **We got our BGM and Sound Effects from the website freesound.org*
 
-We saved all of it into one file **wav** file.
+We compiled the above tracks all into one **wav** file.
 
 **Lighting Setup:**
 <br>
@@ -186,10 +193,12 @@ The lights are being controlled manually in a console. Hence, it is a separate s
 *Page two of our Cuelists and Chase*
 <br>
 
-3. After creating our cues and chases, we made a record using the **Timeline** feature in the console. Where we record our cues and chase in one go while in sync with out audio and images.
+3. After creating our cues and chases, we made a record using the **Timeline** feature in the console. It allows us to record our cues and chase in one go.
 
 
 ## **Communication of Hardware** 
+The graph below shows the way our devices are communicating with each other. We have our laptop used for VNC for our Raspberry Pi 4 to take control of the GUI. The Raspberry Pi sends audio out using the 3.5mm audio jack to our audio mixer which sends the signal out to our speakers. We then have a lighting console which is manually operated.
+
 Note that the lighting console is standalone for now.
 ```mermaid
 graph LR
@@ -197,17 +206,16 @@ graph LR
 A[Laptop]--> B[Raspberry Pi]
 B --> A
 B --> C[QL1]
-D[Quartz]
-
+C --> D[Audio Amplifier]
+D --> E[P620 x 3]
+D --> I[P620 x 3]
+D --> J[L18 x 2]
+D --> F[L18 x 2]
+H[Quartz]
 ```
-
----
-
-## **Software Set Up** ##
+*Graph showing the communication between devices*
 
 <br>
-
-## Communication of devices
 
 ```mermaid
 graph LR
@@ -216,9 +224,20 @@ A[Laptop] --> B[VNC viewer]
 B --> C[Raspberry Pi 4]
 C --> D[Gateway Pi]
 D --> E[Micro-controller]
+E --> F[Servo Motor]
 
 ```
-# **Installing libraries**
+*Graph showing the communication to the polarizing panel*
+
+---
+<br>
+
+# **Set Up** #
+
+
+
+
+## **Installing libraries**
 
 To install the required libraries on our Raspberry Pi 4, we would need to open the terminal.
 <br>
@@ -245,10 +264,10 @@ To allow our Raspberry Pi to do basic image processing, we would need to install
 ### **Pydub**
 Installing the pydub library allows us to play, merge and edit our .wav audio files. To install the library,
 <br>
+
 ```pip install pydub```
 
-
-
+<br>
 
 
 
