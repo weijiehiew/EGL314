@@ -29,23 +29,19 @@ We want to showcase the emotions and feelings of the story through lights and au
 | ----------- | ----------- |
 | 1. | Raspberry Pi 4 |
 | 2. |  XLR-M to 3.5mm-M stereo |
-<<<<<<< Updated upstream
-| 3. |  Avolites Lighting Console |
-| 4. |  Yamaha QL1 Mixer |
-| 5. |  Audio Amplifier |
-| 6. |  Speakers Line Array |
-=======
 | 3. |  **Avolites** Lighting Console |
 | 4. |  Mixer - **Model: Yamaha QL1**|
 | 5. |  Audio Amplifier - **Model: NXAMP4X2MK2**|
 | 6. |  Speakers Line Array and Subwoofers|
->>>>>>> Stashed changes
 
 
 ## Setup
 ---
 ## **Hardware Set Up**
 
+<br>
+
+**Audio Setup:**
 <br>
 
 1. Connect Raspberry Pi 4 to a power source
@@ -55,3 +51,13 @@ We want to showcase the emotions and feelings of the story through lights and au
 
 ![alt text](diagram/audiosetup.jpg)
 *Picture of Audio Setup*
+
+**Lighting Setup:**
+<br>
+
+The lights are being controlled manually in a console. Hence, it is a separate setup on its own.
+<br>
+
+1. In S536, the lights are connected and pre-patched in the console
+2. For each image of our story, we created either cues or chases. We used lights such as the 
+3. 
