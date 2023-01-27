@@ -32,7 +32,7 @@ We want to showcase the emotions and feelings of the story through lights and au
 | 3. |  **Avolites** Lighting Console |
 | 4. |  Mixer - **Model: Yamaha QL1**|
 | 5. |  Audio Amplifier - **Model: NXAMP4X2MK2**|
-| 6. |  Speakers Line Array and Subwoofers|
+| 6. |  Speakers Line Array and Subwoofers **Model: P620 & L18**|
 
 
 ## Setup
@@ -112,7 +112,7 @@ To allow the Raspberry Pi 4 to publish a message to the broker pi, we would need
 ``` sudo pip3 install paho-mqtt```
 
 ### **Pillow**
-To allow our Raspberry Pi to do basic image processing, we would need to install the Pillow library. To install the library,
+To allow our Raspberry Pi to do basic image processing, we would need to install the PIL (pillow) library. To install the library,
 <br>
 ```pip install pillow``` or ```python3 -m pip install pillow```
 
