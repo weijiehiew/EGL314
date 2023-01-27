@@ -22,7 +22,7 @@ We want to showcase the emotions and feelings of the story through the lights an
 - Each one of the circles is a polarizing film which is being controlled by a servo motor which receives instructions from the micro-controller.
 # Our Features
 ## What it consists of:
-**Main GUI** 
+**1. Main GUI** 
 ![alt text](diagram/Show_GUI.png)<br>
 *Screenshot of our GUI*
 - Our GUI shows all of the images that will be displayed on the show starting from image 1 to image 16.
@@ -41,9 +41,103 @@ We want to showcase the emotions and feelings of the story through the lights an
 *Screenshot of Start Show Button*
 <br>
 
+![alt text](diagram/ImageSequence.gif)
+<br>
+*GIF shows the output values of each images being sent out in a sequence*
+
+**2. Lighting**
+
+<br>
+- The use of colourful lights to enhance the audience experience as well as to create an ambiance
+
+<br>
+
+[Lighting Feature](#lighting-setup)<br>
+**See how we setup and prepared out lights*
+<br>
+
+**3. Audio**
+
+<br>
+- The use of Voice Narration, Background Music and Sound Effects to comprehend the sequence of images being displayed out
+
+<br>
+
+[Lighting Feature](#audio-setup)<br>
+**See how we setup and prepared out audio*
+
+<br>
+
+# **System Diagrams**
+
+## **Communication of Hardware** 
+The graph below shows the way our devices are communicating with each other. We have our laptop used for VNC for our Raspberry Pi 4 to take control of the GUI. The Raspberry Pi sends audio out using the 3.5mm audio jack to our audio mixer which sends the signal out to our speakers. We then have a lighting console which is manually operated.
+
+Note that the lighting console is standalone for now.
+```mermaid
+graph LR
+
+A[Laptop]--> B[Raspberry Pi]
+B --> A
+B --> C[QL1]
+C --> D[Audio Amplifier]
+D --> E[P620 x 3]
+D --> I[P620 x 3]
+D --> J[L18 x 2]
+D --> F[L18 x 2]
+H[Quartz]
+```
+*Graph showing the communication between devices*
+
+<br>
+
+```mermaid
+graph LR
+
+A[Laptop] --> B[VNC viewer]
+B --> C[Raspberry Pi 4]
+C --> D[Gateway Pi]
+D --> E[Micro-controller]
+E --> F[Servo Motor]
+
+```
+*Graph showing the communication to the polarizing panel*
+
+---
+## **Flow of code** 
 
 
-# **Setup**
+
+```mermaid
+graph LR
+
+
+A[sendtopolarizer.py] --> B[main.py]
+C[student_pub.py] --> B
+B --> D[startshow function]
+B --> E[img_change function]
+E --> B
+C --> A
+
+```
+<br>
+
+# **Setting up Raspberry Pi 4**
+
+## Hardware
+- Hardware: Raspberry Pi Model B(4GB) <br>
+- Operating System: Raspbian Buster Full
+
+![alt text](diagram/raspberrypi.png)
+<br>
+*Fu YongWei, EGL314 - Lecture 1 Module Introduction*
+
+<br>
+
+## Software
+1. VNC Viewer
+2. PuTTY
+3. Advanced Port Scanner
 
 ### Getting the Raspberry Pi 4 connected
 
@@ -145,95 +239,6 @@ Now after connecting, we have successfully established remote control to the ras
 
 <br>
 
-**Audio Setup:**
-<br>
-
-1. Connect Raspberry Pi 4 to a power source.
-2. Using the XLR-M to a 3.5mm-M stereo cable, connect the 3.5mm jack into the Raspberry Pi 4 and the XLR-M to input 1 & 2 of the audio mixer.
-3. Using a CAT6 ethernet cable, connect the amplifier to the mixer.
-4. Using NL4 cables, connect the speakers and subwoofers to the audio amplifier.
-
-![alt text](diagram/audiosetup.jpg)<br>
-*Picture of Audio Setup*
-<br>
-
-![alt text](diagram/audioamp.jpg)<br>
-*Picture of the Amplifier*
-
----
-To create our show background track, we installed the software **Audacity**
-<br>
-
-![alt text](diagram/audacityaudio.jpg)<br>
-*Screenshot of all our wav files commpiled into timelines*
-<br>
-- The first track is our voice story narrator where we used a text to speech feature from an online website called **NaturalReaders**
-- The second track and third track consists of the Background Music instrumentals throughout the duration
-- The third timeline compiles all of our sound effects<br>
-<br>
-**We got our BGM and Sound Effects from the website freesound.org*
-
-We compiled the above tracks all into one **wav** file.
-
-**Lighting Setup:**
-<br>
-
-The lights are being controlled manually in a console. Hence, it is a separate setup on its own.
-<br>
-
-![alt text](diagram/console.jpg)<br>
-*Picture of console we used*
-
-1. In S536, the lights are connected and pre-patched in the console
-2. For each image of our story, we created either cues or chases, with the use of gobos, colours and fixtures. Lights such as the SL ePAR180, MiniPnl-Fx, Mistral-TC and MagicalFX were utilised.
-
-![alt text](diagram/cueandchase(2).jpg)<br>
-*Page one of our Cuelists and Chase*
-
-![alt text](diagram/cuesandchase(1).jpg)<br>
-*Page two of our Cuelists and Chase*
-<br>
-
-3. After creating our cues and chases, we made a record using the **Timeline** feature in the console. It allows us to record our cues and chase in one go.
-
-
-## **Communication of Hardware** 
-The graph below shows the way our devices are communicating with each other. We have our laptop used for VNC for our Raspberry Pi 4 to take control of the GUI. The Raspberry Pi sends audio out using the 3.5mm audio jack to our audio mixer which sends the signal out to our speakers. We then have a lighting console which is manually operated.
-
-Note that the lighting console is standalone for now.
-```mermaid
-graph LR
-
-A[Laptop]--> B[Raspberry Pi]
-B --> A
-B --> C[QL1]
-C --> D[Audio Amplifier]
-D --> E[P620 x 3]
-D --> I[P620 x 3]
-D --> J[L18 x 2]
-D --> F[L18 x 2]
-H[Quartz]
-```
-*Graph showing the communication between devices*
-
-<br>
-
-```mermaid
-graph LR
-
-A[Laptop] --> B[VNC viewer]
-B --> C[Raspberry Pi 4]
-C --> D[Gateway Pi]
-D --> E[Micro-controller]
-E --> F[Servo Motor]
-
-```
-*Graph showing the communication to the polarizing panel*
-
----
-<br>
-
-
 # **Installing libraries**
 
 To install the required libraries on our Raspberry Pi 4, we would need to open the terminal.
@@ -283,27 +288,57 @@ After installing the relevant modules, open Raspberry Pi terminal and clone the 
 
 <br>
 
+## **Audio Setup:**
+<br>
 
+1. Connect Raspberry Pi 4 to a power source.
+2. Using the XLR-M to a 3.5mm-M stereo cable, connect the 3.5mm jack into the Raspberry Pi 4 and the XLR-M to input 1 & 2 of the audio mixer.
+3. Using a CAT6 ethernet cable, connect the amplifier to the mixer.
+4. Using NL4 cables, connect the speakers and subwoofers to the audio amplifier.
 
+![alt text](diagram/audiosetup.jpg)<br>
+*Picture of Audio Setup*
+<br>
 
+![alt text](diagram/audioamp.jpg)<br>
+*Picture of the Amplifier*
 
 ---
-## Flow of code ##
+To create our show background track, we installed the software **Audacity**
+<br>
 
+![alt text](diagram/audacityaudio.jpg)<br>
+*Screenshot of all our wav files commpiled into timelines*
+<br>
+- The first track is our voice story narrator where we used a text to speech feature from an online website called **NaturalReaders**
+- The second track and third track consists of the Background Music instrumentals throughout the duration
+- The third timeline compiles all of our sound effects<br>
+<br>
+**We got our BGM and Sound Effects from the website freesound.org*
 
+We compiled the above tracks all into one **wav** file.
 
-```mermaid
-graph LR
+## **Lighting Setup:**
+<br>
 
+The lights are being controlled manually in a console. Hence, it is a separate setup on its own.
+<br>
 
-A[sendtopolarizer.py] --> B[main.py]
-C[student_pub.py] --> B
-B --> D[startshow function]
-B --> E[img_change function]
-E --> B
-C --> A
+![alt text](diagram/console.jpg)<br>
+*Picture of console we used*
 
-```
+1. In S536, the lights are connected and pre-patched in the console
+2. For each image of our story, we created either cues or chases, with the use of gobos, colours and fixtures. Lights such as the SL ePAR180, MiniPnl-Fx, Mistral-TC and MagicalFX were utilised.
+
+![alt text](diagram/cueandchase(2).jpg)<br>
+*Page one of our Cuelists and Chase*
+
+![alt text](diagram/cuesandchase(1).jpg)<br>
+*Page two of our Cuelists and Chase*
+<br>
+
+3. After creating our cues and chases, we made a record using the **Timeline** feature in the console. It allows us to record our cues and chase in one go.
+
 <br>
 
 # Running the GUI
