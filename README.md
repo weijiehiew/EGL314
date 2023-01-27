@@ -289,6 +289,12 @@ C --> A
 ```
 <br>
 
-# Setting up the game
+# Running the GUI
+
+To run the GUI from the terminal,
+
+```python3 /home/pi/EGL314/main.py```
+
+
 
 
