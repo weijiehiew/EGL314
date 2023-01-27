@@ -3,7 +3,7 @@ This project is an interactive system that teaches us about the physical phenome
 ## Our Feature
 
 # ★Story Telling Show★
-Our feature is about a captivating story of a couple's journey together and taking the viewers with them through their ups and downs during the relationship.
+Our feature is about a captivating story of a couple's journey together and taking the viewers with them through their ups and downs during their relationship.
 
 <br>
 
