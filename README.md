@@ -237,12 +237,20 @@ E --> F[Servo Motor]
 # **Installing libraries**
 
 To install the required libraries on our Raspberry Pi 4, we would need to open the terminal.
+
+Certain libraries that we need like *tkinter*, *time*, and *threading* are already preinstalled in Raspberry Pi and there is no need to install them.
+
 <br>
+
+### Updating and upgrading your Pi
+---
+
 Firstly, update and upgrade your Raspberry Pi 4 using ```sudo apt update``` and ```sudo apt upgrade```.
 
 <br>
 
 ### **MQTT**
+---
 To allow the Raspberry Pi 4 to publish a message to the broker pi, we would need to install the following;
 
 
@@ -254,11 +262,13 @@ To allow the Raspberry Pi 4 to publish a message to the broker pi, we would need
 ``` sudo pip3 install paho-mqtt```
 
 ### **Pillow**
+---
 To allow our Raspberry Pi to do basic image processing, we would need to install the PIL (pillow) library. To install the library,
 <br>
 ```pip install pillow``` or ```python3 -m pip install pillow```
 
 ### **Pydub**
+---
 Installing the pydub library allows us to play, merge and edit our .wav audio files. To install the library,
 <br>
 
