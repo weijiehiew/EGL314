@@ -52,7 +52,6 @@ We want to showcase the emotions and feelings of the story through the lights an
 <br>
 
 **2. Lighting**
-
 <br>
 - The use of colourful lights to enhance the audience experience as well as to create an ambiance
 
@@ -64,7 +63,6 @@ We want to showcase the emotions and feelings of the story through the lights an
 <br>
 
 **3. Audio**
-
 <br>
 - The use of Voice Narration, Background Music and Sound Effects to comprehend the sequence of images being displayed out
 
@@ -78,7 +76,7 @@ We want to showcase the emotions and feelings of the story through the lights an
 # **System Diagrams**
 
 ## **Communication of Hardware** 
-The graph below shows the way our devices are communicating with each other. We have our laptop used for VNC for our Raspberry Pi 4 to take control of the GUI. The Raspberry Pi sends audio out using the 3.5mm audio jack to our audio mixer which sends the signal out to our speakers. We then have a lighting console which is manually operated.
+The graph below shows the way our devices communicate with each other. We have our laptop used for VNC for the Raspberry Pi 4 to take control of our Graphical User-Interface. The Raspberry Pi sends audio out using the 3.5mm audio jack to our audio mixer which sends the signal out to our speakers. We then have a lighting console which is manually operated.
 
 Note that the lighting console is standalone for now.
 ```mermaid
@@ -94,7 +92,7 @@ D --> J[L18 x 2]
 D --> F[L18 x 2]
 H[Quartz]
 ```
-*Graph showing the communication between devices*
+*Graph shows the communication between devices*
 
 <br>
 
@@ -108,11 +106,13 @@ D --> E[Micro-controller]
 E --> F[Servo Motor]
 
 ```
-*Graph showing the communication to the polarizing panel*
+*Graph shows the communication to the polarizing panel*
 
 ---
-## **Flow of code** 
 
+<br>
+
+## **Flow of code** 
 
 
 ```mermaid
@@ -127,7 +127,9 @@ E --> B
 C --> A
 
 ```
-<br>
+*Graph shows the flow the python files*
+
+---
 
 # **Components**
 
@@ -326,9 +328,22 @@ The lights are being controlled manually in a console. Hence, it is a separate s
 <br>
 
 ## **Audio Setup:**
-### **Hardware:**Yamaha QL1 Digital Mixing Console
+### **Hardware:**
+
+1. Yamaha QL1 Digital Mixing Console
 ![alt text](diagram/ql1.jpg)<br>
 *Image of Mixer from Google*
+
+2. NEXO NXAMP4X2MK2 Audio Amplifier
+![alt text](diagram/amp.png)<br>
+*Image of Amplifier from Google*
+
+2. Raspberry Pi 4
+3. Laptop (For Power Source)
+
+### **Software:** Audacity (Audio Editor)
+![alt text](diagram/audacity.png)<br>
+*Image of Software Logo from Google*
 
 <br>
 1. Connect Raspberry Pi 4 to a power source.
@@ -361,9 +376,11 @@ To create our show background track, we installed the software **Audacity**
 
 We compiled the above tracks all into one **wav** file.
 
-<br>
 
-After installing the relevant modules, open Raspberry Pi terminal and clone the repository inside:
+## Running the GUI
+---
+
+After installing the relevant modules, open Raspberry Pi terminal and clone the repository inside the Desktop:
 <br>
 
 ```git clone https://github.com/weijiehiew/EGL314.git```

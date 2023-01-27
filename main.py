@@ -7,7 +7,7 @@ from pydub import AudioSegment
 from pydub.playback import play
 import threading
 
-storyaudio = AudioSegment.from_wav('/home/pi/TeamD/Resources/s1i1.wav')
+storyaudio = AudioSegment.from_wav('/home/pi/EGL314/Resources/S536_Track.wav')
 
 
 def img_change(m):
@@ -17,7 +17,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/1.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/1.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -55,7 +55,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/2.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/2.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -93,7 +93,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/3.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/3.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -131,7 +131,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/4.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/4.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -169,7 +169,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/5.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/5.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -245,7 +245,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/7.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/7.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -283,7 +283,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/8.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/8.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -322,7 +322,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/9.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/9.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -360,7 +360,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/10.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/10.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -398,7 +398,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/11.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/11.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -436,7 +436,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/12.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/12.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -474,7 +474,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/13.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/13.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -512,7 +512,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/14.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/14.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -550,7 +550,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/15.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/15.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -588,7 +588,7 @@ def img_change(m):
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/16.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/16.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -633,7 +633,7 @@ def startshow():
         audio = threading.Thread(target=play, args=(storyaudio,))
 
         for i in range(16):
-            path3 = '/home/pi/TeamD/Resources/' + pictures[i] + '.png'
+            path3 = '/home/pi/EGL314/Resources/' + pictures[i] + '.png'
             #path2 = Image.open(path3)
             sendtopolarizer.middleman(Images = path3)
             #path2 = Image.open('cartoon.png')
