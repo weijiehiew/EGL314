@@ -45,9 +45,9 @@ We want to showcase the emotions and feelings of the story through lights and au
 <br>
 
 1. Connect Raspberry Pi 4 to a power source
-2. Using the XLR-M to a 3.5mm-M stereo cable, from the Raspberry Pi 4 into the mixer (input 1 & 2)
-3. Using DANTE to connect up the audio amplifier using CAT6 from primary to primary
-4. Using NL4 cables to connect up the speakers from the audio amplifier to the speakers and subwoofers.
+2. Using the XLR-M to a 3.5mm-M stereo cable, connect the 3.5mm jack into the Raspberry Pi 4 and the XLR-M to input 1 & 2 of the audio mixer.
+3. Using a CAT6 ethernet cable, connect the amplifier to the mixer.
+4. Using NL4 cables, connect the speakers and subwoofers to the audio amplifier.
 
 ![alt text](diagram/audiosetup.jpg)
 *Picture of Audio Setup*
@@ -59,13 +59,14 @@ The lights are being controlled manually in a console. Hence, it is a separate s
 <br>
 
 1. In S536, the lights are connected and pre-patched in the console
-2. For each image of our story, we created either cues or chases. We used lights such as the 
+2. For each image of our story, we created either cues or chases. We used lights such as the SL ePAR180,
 3. 
 
 
+## Communication of hardware 
 
 ```mermaid
-graph TD
+graph LR
 
 A[Laptop]--> B[Raspberry Pi]
 B --> A
@@ -73,17 +74,63 @@ B --> C[QL1]
 D[Quartz]
 
 ```
+
 ---
 
 ## **Software Set Up** ##
 
-```mermaid
-graph TD
+<br>
 
-A[Laptop]--> B[Raspberry Pi]
-B --> A
-B --> C[QL1]
-D[Quartz]
+## Communication of devices
+
+```mermaid
+graph LR
+
+A[Laptop] --> B[VNC viewer]
+B --> C[Raspberry Pi 4]
+C --> D[Gateway Pi]
+D --> E[Micro-controller]
+
+```
+# **Installing libraries**
+
+To install the required libraries on our Raspberry Pi 4, we would need to open the terminal.
+<br>
+<br>
+Firstly, update and upgrade your Raspberry Pi 4 using ```sudo apt update``` and ```sudo apt upgrade```.
+
+<br>
+
+### MQTT
+To allow the Raspberry Pi 4 to publish a message to the broker pi, we would need to install the following;
+
+<br>
+
+#### MQTT Client <br>
+```sudo apt install -y mosquitto-clients```
+<br>
+#### Install python MQTT script 
+``` sudo pip3 install paho-mqtt```
+
+
+
+
+
+---
+## Flow of code ##
+
+
+
+```mermaid
+graph LR
+
+
+A[sendtopolarizer.py] --> B[main.py]
+C[student_pub.py] --> B
+B --> D[startshow function]
+B --> E[img_change function]
+E --> B
+C --> A
 
 ```
 
