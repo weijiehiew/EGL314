@@ -61,3 +61,29 @@ The lights are being controlled manually in a console. Hence, it is a separate s
 1. In S536, the lights are connected and pre-patched in the console
 2. For each image of our story, we created either cues or chases. We used lights such as the 
 3. 
+
+
+
+```mermaid
+graph TD
+
+A[Laptop]--> B[Raspberry Pi]
+B --> A
+B --> C[QL1]
+D[Quartz]
+
+```
+---
+
+## **Software Set Up** ##
+
+```mermaid
+graph TD
+
+A[Laptop]--> B[Raspberry Pi]
+B --> A
+B --> C[QL1]
+D[Quartz]
+
+```
+
