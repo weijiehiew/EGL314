@@ -42,21 +42,8 @@ We want to showcase the emotions and feelings of the story through the lights an
 
 <br>
 
-## **Components**
----
-| No. | Equipment |
-| ----------- | ----------- |
-| 1. |  Laptop |
-| 2. |  Raspbery Pi 4 **OS: Raspbian Buster Full**|
-| 3. |  **Avolite Quartz** Titan Lighting Console |
-| 4. |  Mixer - **Model: Yamaha QL1**|
-| 5. |  Audio Amplifier - **Model: NXAMP4X2MK2**|
-| 6. |  Speakers Line Array and Subwoofers **Model: P620 & L18**|
 
-<br>
-
-
-## **Setup**
+# **Setup**
 
 ### Getting the Raspberry Pi 4 connected
 
@@ -139,15 +126,29 @@ Now after connecting, we have successfully established remote control to the ras
 <br>
 
 ---
+<br>
 
-## **Hardware Set Up**
+# **Hardware Set Up**
+
+
+
+### **Components**
+
+| No. | Equipment |
+| ----------- | ----------- |
+| 1. |  Laptop |
+| 2. |  Raspbery Pi 4 **OS: Raspbian Buster Full**|
+| 3. |  **Avolite Quartz** Titan Lighting Console |
+| 4. |  Mixer - **Model: Yamaha QL1**|
+| 5. |  Audio Amplifier - **Model: NXAMP4X2MK2**|
+| 6. |  Speakers Line Array and Subwoofers **Model: P620 & L18**|
 
 <br>
 
 **Audio Setup:**
 <br>
 
-1. Connect Raspberry Pi 4 to a power source
+1. Connect Raspberry Pi 4 to a power source.
 2. Using the XLR-M to a 3.5mm-M stereo cable, connect the 3.5mm jack into the Raspberry Pi 4 and the XLR-M to input 1 & 2 of the audio mixer.
 3. Using a CAT6 ethernet cable, connect the amplifier to the mixer.
 4. Using NL4 cables, connect the speakers and subwoofers to the audio amplifier.
@@ -232,12 +233,8 @@ E --> F[Servo Motor]
 ---
 <br>
 
-# **Set Up** #
 
-
-
-
-## **Installing libraries**
+# **Installing libraries**
 
 To install the required libraries on our Raspberry Pi 4, we would need to open the terminal.
 <br>
@@ -290,4 +287,8 @@ E --> B
 C --> A
 
 ```
+<br>
+
+# Setting up the game
+
 
