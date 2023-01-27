@@ -36,19 +36,20 @@ We want to showcase the emotions and feelings of the story through the lights an
 
 
 - At the bottom, we have the "Start Show" button which is a command that will automatically send all 16 images in a sequence of 15 seconds delay for each image to the polarizer panel.
-![alt text](diagram/startshowbtn.png)
-<br>
+![alt text](diagram/startshowbtn.png)<br>
 *Screenshot of Start Show Button*
-<br>
 
 ![alt text](diagram/ImageSequence.gif)
 <br>
 *GIF shows the output values of each images being sent out in a sequence*
 
+<br>
+
 **2. Lighting**
 
 <br>
 - The use of colourful lights to enhance the audience experience as well as to create an ambiance
+
 
 <br>
 
@@ -120,6 +121,19 @@ E --> B
 C --> A
 
 ```
+<br>
+
+# **Components**
+
+| No. | Equipment |
+| ----------- | ----------- |
+| 1. |  Laptop |
+| 2. |  Raspbery Pi 4 **OS: Raspbian Buster Full**|
+| 3. |  **Avolite Quartz** Titan Lighting Console |
+| 4. |  Mixer - **Model: Yamaha QL1**|
+| 5. |  Audio Amplifier - **Model: NXAMP4X2MK2**|
+| 6. |  Speakers Line Array and Subwoofers **Model: P620 & L18**|
+
 <br>
 
 # **Setting up Raspberry Pi 4**
@@ -225,20 +239,6 @@ Now after connecting, we have successfully established remote control to the ras
 # **Hardware Set Up**
 
 
-
-### **Components**
-
-| No. | Equipment |
-| ----------- | ----------- |
-| 1. |  Laptop |
-| 2. |  Raspbery Pi 4 **OS: Raspbian Buster Full**|
-| 3. |  **Avolite Quartz** Titan Lighting Console |
-| 4. |  Mixer - **Model: Yamaha QL1**|
-| 5. |  Audio Amplifier - **Model: NXAMP4X2MK2**|
-| 6. |  Speakers Line Array and Subwoofers **Model: P620 & L18**|
-
-<br>
-
 # **Installing libraries**
 
 To install the required libraries on our Raspberry Pi 4, we would need to open the terminal.
@@ -281,16 +281,50 @@ Installing the pydub library allows us to play, merge and edit our .wav audio fi
 
 ---
 
-After installing the relevant modules, open Raspberry Pi terminal and clone the repository inside.
 <br>
 
-```git clone https://github.com/weijiehiew/EGL314.git```
+# Lights and Audio Preparation
+After you have got your Raspberry Pi setup ready, we can start lights and audio creations.
+
+---
+## **Lighting Setup:**
+### **Hardware**: Avolites Quartz Titan Console
+![alt text](diagram/lightconsole.jpg)<br>
+*Image of console from Google*
+
+<br>
+The lights are being controlled manually in a console. Hence, it is a separate setup on its own.
+<br>
+
+![alt text](diagram/console.jpg)<br>
+*Picture of console*
+
+1. In S536, the lights are connected and pre-patched in the console
+2. For each image of our story, we created either cues or chases, with the use of gobos, colours and fixtures. Lights such as the SL ePAR180, MiniPnl-Fx, Mistral-TC and MagicalFX were utilised.
+
+![alt text](diagram/cueandchase(2).jpg)<br>
+*Page one of our Cuelists and Chase*
+
+![alt text](diagram/cuesandchase(1).jpg)<br>
+*Page two of our Cuelists and Chase*
+<br>
+
+3. After creating our cues and chases, we made a live recording using the **Timeline** feature in the console. It allows us to record our cues and chase in one go.
+
+![alt text](diagram/timelinefader.jpg)<br>
+*Image shows the timeline fader brought up*
+
+![alt text](diagram/LightTimeline.gif)<br>
+*GIF shows our timeline creation with cues and chase recorded*
 
 <br>
 
 ## **Audio Setup:**
-<br>
+### **Hardware:**Yamaha QL1 Digital Mixing Console
+![alt text](diagram/ql1.jpg)<br>
+*Image of Mixer from Google*
 
+<br>
 1. Connect Raspberry Pi 4 to a power source.
 2. Using the XLR-M to a 3.5mm-M stereo cable, connect the 3.5mm jack into the Raspberry Pi 4 and the XLR-M to input 1 & 2 of the audio mixer.
 3. Using a CAT6 ethernet cable, connect the amplifier to the mixer.
@@ -318,9 +352,9 @@ To create our show background track, we installed the software **Audacity**
 
 We compiled the above tracks all into one **wav** file.
 
-## **Lighting Setup:**
 <br>
 
+<<<<<<< Updated upstream
 The lights are being controlled manually in a console. Hence, it is a separate setup on its own.
 <br>
 
@@ -339,12 +373,16 @@ The lights are being controlled manually in a console. Hence, it is a separate s
 <br>
 
 3. After creating our cues and chases, we made a record using the **Timeline** feature in the console. It allows us to record our cues and chase in one go.
+=======
+# Running the GUI
+>>>>>>> Stashed changes
 
+After installing the relevant modules, open Raspberry Pi terminal and clone the repository inside:
 <br>
 
-# Running the GUI
+```git clone https://github.com/weijiehiew/EGL314.git```
 
-To run the GUI from the terminal,
+To run the GUI python file:
 
 ```python3 /home/pi/EGL314/main.py```
 
