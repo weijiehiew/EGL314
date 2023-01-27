@@ -16,8 +16,19 @@ We want to showcase the emotions and feelings of the story through the lights an
 ![alt text](diagram/Show_GUI.png)
 *Screenshot of our GUI*
 - Our GUI shows all of the images that will be displayed on the show starting from image 1 to image 16.
-- Each image is a button. When the button is pressed individually **(right frame)**, the image will appear on the blank canvas **(left frame)**, and it will send out the image onto the polarizer.
-- At the bottom, we have the "Start Show" button which is a command that will automatically send all 16 images in a sequence of 15 seconds delay for each image.
+- Each image is a **button**. When the button is pressed individually **(right frame)**, the image will appear on the blank canvas **(left frame)**, and it will send out the image onto the polarizer panel.
+![alt text](diagram/buttons.png)
+*Close up of Image Buttons*
+![alt text](diagram/buttonfunction.png)
+*Example of Image 2 being pressed*
+![alt text](diagram/imageonpolariser.jpg)
+*Image on the Polarizer Panel*
+
+
+- At the bottom, we have the "Start Show" button which is a command that will automatically send all 16 images in a sequence of 15 seconds delay for each image to the polarizer panel.
+![alt text](diagram/startshowbtn.png)
+<br>
+*Screenshot of Start Show Button*
 <br>
 
 **Polarizer Panel**
@@ -31,7 +42,7 @@ We want to showcase the emotions and feelings of the story through the lights an
 
 <br>
 
-## Components needed
+## **Components**
 ---
 | No. | Equipment |
 | ----------- | ----------- |
@@ -45,7 +56,7 @@ We want to showcase the emotions and feelings of the story through the lights an
 <br>
 
 
-## Setup
+## **Setup**
 
 ### Getting the Raspberry Pi 4 connected
 
