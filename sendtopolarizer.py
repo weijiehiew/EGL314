@@ -22,7 +22,7 @@ def middleman(Images):
 	#resultImage.show()
 
 	## Write Image to save .png file
-	resultImage.save('cartoon.png')
+	## resultImage.save('cartoon.png')
 
 	# Retrieving pixel value and formating it into list of list
 	x = 32; k = 0; outputValue = [0 for i in range(x)]
