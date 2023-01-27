@@ -11,7 +11,17 @@ In this generation, many audiences are more drawn to drama and films these days 
 <br>
 
 We want to showcase the emotions and feelings of the story through the lights and audio, and having the visuals from our very own pixelated images displayed out to the Pixel Tint Panel.
-## What our feature consists of:
+
+# Polariser Panel
+
+
+![alt text](diagram/Panel.jpg)<br>
+*Picture of the Polarizer Panel*
+
+- This is the polarizer panel which will be used to display our pixelized image.
+- Each one of the circles is a polarizing film which is being controlled by a servo motor which receives instructions from the micro-controller.
+# Our Features
+## What it consists of:
 **Main GUI** 
 ![alt text](diagram/Show_GUI.png)<br>
 *Screenshot of our GUI*
@@ -20,7 +30,7 @@ We want to showcase the emotions and feelings of the story through the lights an
 ![alt text](diagram/buttons.png)<br>
 *Close up of Image Buttons*
 ![alt text](diagram/buttonfunction.png)<br>
-*Example of Image 2 being pressed*
+*Example of Image 2 after being pressed*
 ![alt text](diagram/imageonpolariser.jpg)<br>
 *Image on the Polarizer Panel*
 
@@ -31,16 +41,6 @@ We want to showcase the emotions and feelings of the story through the lights an
 *Screenshot of Start Show Button*
 <br>
 
-**Polarizer Panel**
-![alt text](diagram/Panel.jpg)<br>
-*Picture of the Polarizer Panel*
-
-- This is the polarizer panel which will be used to display our pixelized image.
-- Each one of the circles is a polarizing film which is being controlled by a servo motor which receives instructions from the micro-controller.
-
-
-
-<br>
 
 
 # **Setup**
