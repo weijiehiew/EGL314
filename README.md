@@ -3,7 +3,7 @@ This project is an interactive system that teaches us about the physical phenome
 ## Our Feature
 
 # ★Story Telling Show★
-Our feature is about a captivating story of a couple's journey together and taking the viewers with them through their ups and downs during their relationship.
+Our feature is about a captivating story of a couple's journey together and taking the viewers with them through their ups and downs during the relationship.
 
 <br>
 
@@ -273,6 +273,13 @@ Installing the pydub library allows us to play, merge and edit our .wav audio fi
 <br>
 
 ```pip install pydub```
+
+---
+
+After installing the relevant modules, open Raspberry Pi terminal and clone the repository inside.
+<br>
+
+```git clone https://github.com/weijiehiew/EGL314.git```
 
 <br>
 
