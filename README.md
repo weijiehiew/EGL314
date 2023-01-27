@@ -244,8 +244,6 @@ Now after connecting, we have successfully established remote control to the ras
 ---
 <br>
 
-# **Hardware Set Up**
-
 
 # **Installing libraries**
 
@@ -346,6 +344,7 @@ The lights are being controlled manually in a console. Hence, it is a separate s
 *Image of Software Logo from Google*
 
 <br>
+
 1. Connect Raspberry Pi 4 to a power source.
 2. Using the XLR-M to a 3.5mm-M stereo cable, connect the 3.5mm jack into the Raspberry Pi 4 and the XLR-M to input 1 & 2 of the audio mixer.
 3. Using a CAT6 ethernet cable, connect the amplifier to the mixer.
