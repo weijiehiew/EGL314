@@ -329,6 +329,7 @@ The lights are being controlled manually in a console. Hence, it is a separate s
 
 1. In S536, the lights are connected and pre-patched in the console
 2. For each image of our story, we created either cues or chases, with the use of gobos, colours and fixtures. Lights such as the SL ePAR180, MiniPnl-Fx, Mistral-TC and MagicalFX were utilised.
+3. The cues and chase created were fit according to the setting and atmosphere in each individual image that it possesses to give our audience an unique experience.
 
 ![alt text](diagram/cueandchase(2).jpg)<br>
 *Page one of our Cuelists and Chase*
