@@ -1,16 +1,19 @@
 # Pixel Tint 32 x 32 System
-This project is an interactive system that teaches us about the physical phenomenon on polarization of lights. Polarisers are controlled by servo motors to display pixelated images by rotating the polarizers to different angles to create different shades of grey.
-## Our Feature
+This project is an interactive system that teaches us about the physical phenomenon on polarization of lights. A panel made up of 1024 circular polarisers, which are controlled by servo motors. It displays out pixelated images by rotating the polarizers to different angles to create different shades of grey.
 
 # ★Story Telling Show★
 Our feature is about a captivating story of a couple's journey together and taking the viewers with them through their ups and downs during the relationship.
 
 <br>
 
-In this generation, many audiences are more drawn to drama and films these days which majority includes romantic genre's. Hence, we want our audiences, teenagers and adults from 13-21 year old to witness our show, and for them to either relate to or just appreciate at the end of it.
+From our conducted research, we have realised that in this generation many audiences are more commonly drawn to drama and films these days. An example would be the popular K-Drama Series Business Proposal or the Western Series Never Have I Ever. Majority of which includes romantic genre's. Our show consists just that with a hint of comedy to entice our audiences. Therefore, we are aiming for teenagers and adults ranging from 13-21 year old to witness our show, or anyone in general. So that they could have something to relate to or just appreciate the artwork.
 <br>
 
 We want to showcase the emotions and feelings of the story through the lights and audio, and having the visuals from our very own pixelated images displayed out to the Pixel Tint Panel.
+
+<br>
+
+---
 
 # Polariser Panel
 
@@ -27,10 +30,13 @@ We want to showcase the emotions and feelings of the story through the lights an
 *Screenshot of our GUI*
 - Our GUI shows all of the images that will be displayed on the show starting from image 1 to image 16.
 - Each image is a **button**. When the button is pressed individually **(right frame)**, the image will appear on the blank canvas **(left frame)**, and it will send out the image onto the polarizer panel.
+
 ![alt text](diagram/buttons.png)<br>
 *Close up of Image Buttons*
+
 ![alt text](diagram/buttonfunction.png)<br>
 *Example of Image 2 after being pressed*
+
 ![alt text](diagram/imageonpolariser.jpg)<br>
 *Image on the Polarizer Panel*
 
