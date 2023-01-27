@@ -7,19 +7,8 @@ from pydub import AudioSegment
 from pydub.playback import play
 import threading
 
-t1 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s1i1.wav')
-t2 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s1i2.wav')
-t4 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s2i3notif.wav')
-t5 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s2i3type.wav')
-t6 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s2i4.wav')
-t7 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s3.wav')
-t8 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s3i5.wav')
-t9 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s5i9.wav')
-t10 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s5i12.wav')
-t11 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s7i14.wav')
+storyaudio = AudioSegment.from_wav('/home/pi/TeamD/Resources/s1i1.wav')
 
-
-t3 = AudioSegment.from_wav('/home/pi/TeamD/Resources/s2i3bgm.wav')
 
 def img_change(m):
     ## open image file
@@ -405,7 +394,7 @@ def img_change(m):
                 print(outputValue)
                 pubpic(outputValue)
         elif m ==11:
-                img1 = PhotoImage(file="Resources/11.png")
+                img1 = PhotoImage(file="Resources/11(1).png")
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
@@ -638,15 +627,10 @@ def img_change(m):
                 label.image = img1
 
 def startshow():
-        pictures = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']
+        pictures = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19']
 
     
-        o = threading.Thread(target=play, args=(t3,))
-
-        three_seconds = 3 * 1000
-        slice = t4[:three_seconds]
-
-        add = slice + t5
+        audio = threading.Thread(target=play, args=(storyaudio,))
 
         for i in range(16):
             path3 = '/home/pi/TeamD/Resources/' + pictures[i] + '.png'
@@ -654,31 +638,16 @@ def startshow():
             sendtopolarizer.middleman(Images = path3)
             #path2 = Image.open('cartoon.png')
             print(path3)
+            time.sleep(5)
+
             if i == 1:
-                play(t1)
                 time.sleep(10)
-            elif i == 2:
+            elif i == 8:
                 time.sleep(10)
-                play(t2)
-            elif i == 3:
+            elif i == 13:
                 time.sleep(10)
-                o.start()
-                play(add)
-            elif i == 4:
+            elif i == 19:
                 time.sleep(10)
-                play(t6)
-            elif i == 5:
-                time.sleep(10)
-                play(t8)
-            elif i == 9:
-                time.sleep(10)
-                play(t9)
-            elif i == 12:
-                time.sleep(10)
-                play(t10)
-            elif i == 14:
-                time.sleep(10)
-                play(t11)
             else:
                 time.sleep(15)
         

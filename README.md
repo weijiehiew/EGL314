@@ -29,9 +29,29 @@ We want to showcase the emotions and feelings of the story through lights and au
 | ----------- | ----------- |
 | 1. | Raspberry Pi 4 |
 | 2. |  XLR-M to 3.5mm-M stereo |
+<<<<<<< Updated upstream
 | 3. |  Avolites Lighting Console |
 | 4. |  Yamaha QL1 Mixer |
 | 5. |  Audio Amplifier |
 | 6. |  Speakers Line Array |
+=======
+| 3. |  **Avolites** Lighting Console |
+| 4. |  Mixer - **Model: Yamaha QL1**|
+| 5. |  Audio Amplifier - **Model: NXAMP4X2MK2**|
+| 6. |  Speakers Line Array and Subwoofers|
+>>>>>>> Stashed changes
 
 
+## Setup
+---
+## **Hardware Set Up**
+
+<br>
+
+1. Connect Raspberry Pi 4 to a power source
+2. Using the XLR-M to a 3.5mm-M stereo cable, from the Raspberry Pi 4 into the mixer (input 1 & 2)
+3. Using DANTE to connect up the audio amplifier using CAT6 from primary to primary
+4. Using NL4 cables to connect up the speakers from the audio amplifier to the speakers and subwoofers.
+
+![alt text](diagram/audiosetup.jpg)
+*Picture of Audio Setup*
