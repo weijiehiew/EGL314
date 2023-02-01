@@ -7,50 +7,10 @@ from pydub import AudioSegment
 from pydub.playback import play
 import threading
 
-storyaudio = AudioSegment.from_wav('/home/pi/EGL314/Resources/S536_Track.wav')
-
 
 def img_change(m):
     ## open image file
         if m == 1:
-                img1 = PhotoImage(file="Resources/1.png")
-                label.configure(image=img1)
-                label.image = img1
-                #print(Image)
-                myImage = Image.open('/home/pi/EGL314/Resources/1.png')
-                ## greyscale image file
-                greyImage = ImageOps.grayscale(myImage)
-                #greyImage.show()
-
-                ## Limiting to 8 shades of greyscale colour
-                greyQuantize = greyImage.quantize(8)
-                #greyQuantize.show()
-
-                ## resize to 32 x 32 pixels
-                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
-                #smallImage.show()
-
-                ## Blow it back up to original photo size (32 x 32 pixels upscale)
-                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
-                #resultImage.show()
-
-                ## Write Image to save .png file
-                ##resultImage.save('cartoon.png')
-
-                # Retrieving pixel value and formating it into list of list
-                x = 32; k = 0; outputValue = [0 for i in range(x)]
-                for i in range(x):
-                  outputValue[i] = [0 for j in range(x)]
-                pixValue = list(smallImage.getdata())
-
-                for i in range(x):
-                 for j in range(x):
-                        outputValue[i][j] = pixValue[k]
-                        k = k + 1;
-
-                print(outputValue)
-                pubpic(outputValue)
-        elif m ==2:
                 img1 = PhotoImage(file="Resources/2.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -88,7 +48,7 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==3:
+        elif m ==2:
                 img1 = PhotoImage(file="Resources/3.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -126,7 +86,7 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==4:
+        elif m ==3:
                 img1 = PhotoImage(file="Resources/4.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -164,7 +124,7 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==5:
+        elif m ==4:
                 img1 = PhotoImage(file="Resources/5.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -202,12 +162,50 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==6:
+        elif m ==5:
                 img1 = PhotoImage(file="Resources/6.png")
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/TeamD/Resources/6.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/6.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
+        elif m ==6:
+                img1 = PhotoImage(file="Resources/7.png")
+                label.configure(image=img1)
+                label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/TeamD/Resources/7.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -241,11 +239,11 @@ def img_change(m):
                 print(outputValue)
                 pubpic(outputValue)
         elif m ==7:
-                img1 = PhotoImage(file="Resources/7.png")
+                img1 = PhotoImage(file="Resources/8.png")
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/EGL314/Resources/7.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/8.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -279,45 +277,6 @@ def img_change(m):
                 print(outputValue)
                 pubpic(outputValue)
         elif m ==8:
-                img1 = PhotoImage(file="Resources/9.png")
-                label.configure(image=img1)
-                label.image = img1
-                #print(Image)
-                myImage = Image.open('/home/pi/EGL314/Resources/9.png')
-                ## greyscale image file
-                greyImage = ImageOps.grayscale(myImage)
-                #greyImage.show()
-
-                ## Limiting to 8 shades of greyscale colour
-                greyQuantize = greyImage.quantize(8)
-                #greyQuantize.show()
-
-                ## resize to 32 x 32 pixels
-                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
-                #smallImage.show()
-
-                ## Blow it back up to original photo size (32 x 32 pixels upscale)
-                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
-                #resultImage.show()
-
-                ## Write Image to save .png file
-                ##resultImage.save('cartoon.png')
-
-                # Retrieving pixel value and formating it into list of list
-                x = 32; k = 0; outputValue = [0 for i in range(x)]
-                for i in range(x):
-                  outputValue[i] = [0 for j in range(x)]
-                pixValue = list(smallImage.getdata())
-
-                for i in range(x):
-                 for j in range(x):
-                        outputValue[i][j] = pixValue[k]
-                        k = k + 1;
-
-                print(outputValue)
-                pubpic(outputValue)
-                
-        elif m ==9:
                 img1 = PhotoImage(file="Resources/10.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -355,7 +314,8 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==10:
+                
+        elif m ==9:
                 img1 = PhotoImage(file="Resources/11.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -393,8 +353,8 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==11:
-                img1 = PhotoImage(file="Resources/12(1).png")
+        elif m ==10:
+                img1 = PhotoImage(file="Resources/12.png")
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
@@ -431,12 +391,12 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==12:
-                img1 = PhotoImage(file="Resources/14.png")
+        elif m ==11:
+                img1 = PhotoImage(file="Resources/13(1).png")
                 label.configure(image=img1)
                 label.image = img1
                 #print(Image)
-                myImage = Image.open('/home/pi/EGL314/Resources/14.png')
+                myImage = Image.open('/home/pi/EGL314/Resources/13.png')
                 ## greyscale image file
                 greyImage = ImageOps.grayscale(myImage)
                 #greyImage.show()
@@ -469,7 +429,7 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==13:
+        elif m ==12:
                 img1 = PhotoImage(file="Resources/15.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -507,7 +467,7 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==14:
+        elif m ==13:
                 img1 = PhotoImage(file="Resources/16.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -545,7 +505,7 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==15:
+        elif m ==14:
                 img1 = PhotoImage(file="Resources/17.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -583,7 +543,7 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        elif m ==16:
+        elif m ==15:
                 img1 = PhotoImage(file="Resources/18.png")
                 label.configure(image=img1)
                 label.image = img1
@@ -621,18 +581,56 @@ def img_change(m):
 
                 print(outputValue)
                 pubpic(outputValue)
-        else:
+        elif m ==16:
                 img1 = PhotoImage(file="Resources/19.png")
+                label.configure(image=img1)
+                label.image = img1
+                #print(Image)
+                myImage = Image.open('/home/pi/EGL314/Resources/19.png')
+                ## greyscale image file
+                greyImage = ImageOps.grayscale(myImage)
+                #greyImage.show()
+
+                ## Limiting to 8 shades of greyscale colour
+                greyQuantize = greyImage.quantize(8)
+                #greyQuantize.show()
+
+                ## resize to 32 x 32 pixels
+                smallImage = greyQuantize.resize((32,32), Image.BILINEAR)
+                #smallImage.show()
+
+                ## Blow it back up to original photo size (32 x 32 pixels upscale)
+                resultImage = smallImage.resize(myImage.size, Image.NEAREST)
+                #resultImage.show()
+
+                ## Write Image to save .png file
+                ##resultImage.save('cartoon.png')
+
+                # Retrieving pixel value and formating it into list of list
+                x = 32; k = 0; outputValue = [0 for i in range(x)]
+                for i in range(x):
+                  outputValue[i] = [0 for j in range(x)]
+                pixValue = list(smallImage.getdata())
+
+                for i in range(x):
+                 for j in range(x):
+                        outputValue[i][j] = pixValue[k]
+                        k = k + 1;
+
+                print(outputValue)
+                pubpic(outputValue)
+        else:
+                img1 = PhotoImage(file="Resources/9.png")
                 label.configure(image=img1)
                 label.image = img1
 
 def startshow():
-        pictures = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19']
+        pictures = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20']
 
-    
+        storyaudio = AudioSegment.from_wav('/home/pi/EGL314/Resources/S536_Track.wav')
         audio = threading.Thread(target=play, args=(storyaudio,))
 
-        for i in range(16):
+        for i in range(20):
             path3 = '/home/pi/EGL314/Resources/' + pictures[i] + '.png'
             #path2 = Image.open(path3)
             sendtopolarizer.middleman(Images = path3)
@@ -641,7 +639,7 @@ def startshow():
             time.sleep(5)
 
             if i == 1:
-                time.sleep(15)
+                time.sleep(6)
             elif i == 8:
                 time.sleep(10)
             elif i == 13:
@@ -679,22 +677,22 @@ frame3.grid(row=1, columnspan=2, padx=10, pady=5)
 
 
 #open images
-pic1 = PhotoImage(file="Resources/1.png")
-pic2 = PhotoImage(file="Resources/2.png")
-pic3 = PhotoImage(file="Resources/3.png")
-pic4 = PhotoImage(file="Resources/4.png")
-pic5 = PhotoImage(file="Resources/5.png")
-pic6 = PhotoImage(file="Resources/6.png")
-pic7 = PhotoImage(file="Resources/7.png")
-pic8 = PhotoImage(file="Resources/9.png")
-pic9 = PhotoImage(file="Resources/10.png")
-pic10 = PhotoImage(file="Resources/11.png")
-pic11 = PhotoImage(file="Resources/12(1).png")
-pic12 = PhotoImage(file="Resources/14.png")
-pic13 = PhotoImage(file="Resources/15.png")
-pic14 = PhotoImage(file="Resources/16.png")
-pic15 = PhotoImage(file="Resources/17.png")
-pic16 = PhotoImage(file="Resources/18.png")
+pic1 = PhotoImage(file="Resources/2.png")
+pic2 = PhotoImage(file="Resources/3.png")
+pic3 = PhotoImage(file="Resources/4.png")
+pic4 = PhotoImage(file="Resources/5.png")
+pic5 = PhotoImage(file="Resources/6.png")
+pic6 = PhotoImage(file="Resources/7.png")
+pic7 = PhotoImage(file="Resources/8.png")
+pic8 = PhotoImage(file="Resources/10.png")
+pic9 = PhotoImage(file="Resources/11.png")
+pic10 = PhotoImage(file="Resources/12.png")
+pic11 = PhotoImage(file="Resources/13(1).png")
+pic12 = PhotoImage(file="Resources/15.png")
+pic13 = PhotoImage(file="Resources/16.png")
+pic14 = PhotoImage(file="Resources/17.png")
+pic15 = PhotoImage(file="Resources/18.png")
+pic16 = PhotoImage(file="Resources/19.png")
 
 #resize the images
 image1 = pic1.subsample(6, 6)
@@ -715,7 +713,7 @@ image15 = pic15.subsample(6, 6)
 image16 = pic16.subsample(6, 6)
 
 #imageshowonebyone
-img1 = PhotoImage(file="Resources/blank.png")
+img1 = PhotoImage(file="Resources/9.png")
 label=Label(frame1, image=img1, bg="grey")
 label.grid(row=0, column=0, padx=5, pady=5)
 
