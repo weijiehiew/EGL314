@@ -641,7 +641,7 @@ def startshow():
             time.sleep(5)
 
             if i == 1:
-                time.sleep(10)
+                time.sleep(15)
             elif i == 8:
                 time.sleep(10)
             elif i == 13:
