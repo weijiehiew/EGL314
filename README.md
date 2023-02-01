@@ -26,7 +26,7 @@ We want to showcase the emotions and feelings of the story through the lights an
 # Our Features
 ## What it consists of:
 **1. Main GUI** 
-![alt text](diagram/Show_GUI.png)<br>
+![alt text](diagram/maingui.png)<br>
 *Screenshot of our GUI*
 - Our GUI shows all of the images that will be displayed on the show starting from image 1 to image 16.
 - Each image is a **button**. When the button is pressed individually **(right frame)**, the image will appear on the blank canvas **(left frame)**, and it will send out the image onto the polarizer panel.
