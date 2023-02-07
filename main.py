@@ -636,15 +636,14 @@ def startshow():
             sendtopolarizer.middleman(Images = path3)
             #path2 = Image.open('cartoon.png')
             print(path3)
-            time.sleep(5)
 
             if i == 1:
                 time.sleep(6)
-            elif i == 8:
+            elif i == 9:
                 time.sleep(10)
-            elif i == 13:
+            elif i == 14:
                 time.sleep(10)
-            elif i == 19:
+            elif i == 20:
                 time.sleep(10)
             else:
                 time.sleep(15)
