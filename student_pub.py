@@ -11,14 +11,8 @@ def pubpic(output):
     pubMsg = client.publish(
         topic='studentpi/team4', #Please change according to your respective Gr$
         payload=msg.encode('utf-8'),
-        qos=0,    )
-
-    pubMsg.wait_for_publish()
-    print(pubMsg.is_published())
-    pubMsg = client.publish(
-        topic='studentpi/team4', #Please change according to your respective Gr$
-        payload=msg.encode('utf-8'),
-        qos=0,    )
+        qos=0,    
+        )
 
     pubMsg.wait_for_publish()
     print(pubMsg.is_published())
