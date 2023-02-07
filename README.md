@@ -475,7 +475,7 @@ image16button.grid(row=3, column=3, padx=10, pady=20)
 label16 = Label(frame2, text="Image 16",font=("Calibri, 8"))
 label16.place(x=472, y=622)
 ```
-To put the buttons with their respective images:
+To put the respective images on the buttons:
 ```
 #open images
 pic1 = PhotoImage(file="Resources/2.png")
