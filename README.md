@@ -379,7 +379,7 @@ We compiled the above tracks all into one **wav** file.
 **Importing of Libraries**
 <br>
 
-These are the nessecary libraries we used in order to develop our storytelling show
+These are the necessary libraries we used in order to develop our storytelling show
 ```
 from tkinter import *
 import time
@@ -1139,7 +1139,7 @@ label.grid(row=0, column=0, padx=5, pady=5)
 **Start Show Button**
 <br>
 - Made use of the array to create variables
-- Open the audio 'wav' file created from the Audacity software
+- Open the audio 'wav' file created from the Audacity software in the directory
 - Used the for loop statement to produce the sequence of images sending out into the panel, while also using the 'time sleep' statement to delay each image 
 ```
 def startshow():
