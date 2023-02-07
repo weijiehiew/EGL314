@@ -1169,7 +1169,7 @@ def startshow():
 start = Button(frame3, text="Start Show!",font=("Calibri, 12"), bg='pink', width=13, height=2, command=startshow)
 start.grid(rowspan =1 , columnspan = 4)
 ```
-## Running the GUI
+## Running the GUI in Rasberry Pi 4
 ---
 
 After installing the relevant modules, open Raspberry Pi terminal and clone the repository inside the Desktop:
@@ -1181,6 +1181,8 @@ To run the GUI python file:
 
 ```python3 /home/pi/EGL314/main.py```
 
+## Showtime Rundown
+---
 
 Before the show starts, since our lights is a standalone, one person will be stationed at the GUI area, one person at the lighting station and another will be at the audio section.
 
