@@ -1199,6 +1199,10 @@ Meanwhile, the other person at the audio section will attend to the mixer to adj
 
 <br>
 
-
+![alt text](diagram/howtostart2.png)<br>
 **Photo taken from the lighting console. Where Fader 1(White Light - Shine on Panel the whole duration) and Fader 6 (Timeline - where cues and chase were pre-recorded)*
+
+<br>
+
+# Enjoy Our Show!<3
 
