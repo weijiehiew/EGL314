@@ -22,7 +22,10 @@ We want to showcase the emotions and feelings of the story through the lights an
 *Picture of the Polarizer Panel*
 
 - This is the polarizer panel which will be used to display our pixelized image.
-- Each one of the circles is a polarizing film which is being controlled by a servo motor which receives instructions from the micro-controller.
+- Each one of the disc is a polarizing film which is being controlled by a servo motor which receives instructions from the micro-controller.
+- In front of each panel will be another piece of polarizer film.
+- When the discs turn, the different angles of the 2 polarizers will block out light, showing different shades of grey.
+
 # Our Features
 ## What it consists of:
 **1. Main GUI** 
