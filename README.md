@@ -1200,7 +1200,7 @@ Meanwhile, the other person at the audio section will attend to the mixer to adj
 <br>
 
 ![alt text](diagram/howtostart2.png)<br>
-**Photo taken from the lighting console. Where Fader 1(White Light - Shine on Panel the whole duration) and Fader 6 (Timeline - where cues and chase were pre-recorded)*
+**Photo taken from the lighting console. Where Fader 1(White Light - Shine on Panel the whole duration) and Fader 6 (Timeline - where cues and chase were pre-recorded) grey button will be pressed at the same time with our GUI*
 
 <br>
 
