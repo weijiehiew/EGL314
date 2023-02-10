@@ -21,10 +21,28 @@ We want to showcase the emotions and feelings of the story through the lights an
 ![alt text](diagram/Panel.jpg)<br>
 *Picture of the Polarizer Panel*
 
-- This is the polarizer panel which will be used to display our pixelized image.
-- Each one of the disc is a polarizing film which is being controlled by a servo motor which receives instructions from the micro-controller.
+- This is the polarizer panel which will be used to display our pixelized images.
+- Each one of the disc is a polarizing film which is being controlled by a servo motors which receive instructions from the micro-controllers.
 - In front of each panel will be another piece of polarizer film.
-- When the discs turn, the different angles of the 2 polarizers will block out light, showing different shades of grey.
+- When the discs turn, the different angles of the 2 polarizers will slowly block out lights (0° is white, 90° is black), showing different shades of grey.
+
+---
+
+# Understanding the Pixel Tint System
+
+In this system, we use a publish-subscribe network protoccol called "MQTT".
+
+<br>
+This is so that it is possible for us to send different images to display out into the polarising panel
+
+<br>
+So in this scenario,
+
+- Our Raspberry Pi(client) would be publishing to a Broker Pi.
+- When our Group Pi publishes to the Broker Pi, the Broker Pi will then subscribe to the micro-controllers behind the panels
+- We ensured that the Broker Pi is in the same network as our Raspberry Pi(client), as well as the micro-controllers to be able to publish
+
+---
 
 # Our Features
 ## What it consists of:
@@ -289,6 +307,7 @@ Installing the pydub library allows us to play, merge and edit our .wav audio fi
 ```pip install pydub```
 
 ---
+
 
 <br>
 
