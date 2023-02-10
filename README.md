@@ -33,7 +33,7 @@ We want to showcase the emotions and feelings of the story through the lights an
 In this system, we used a publish-subscribe network protocol called "MQTT".
 
 <br>
-This is so that it is possible for us to send different images to display out into the polarising panel
+This is so that it is possible for us to send different images to display out to the polarising panel
 
 <br>
 
@@ -95,7 +95,7 @@ So in this scenario,
 
 <br>
 
-[Lighting Feature](#audio-setup)<br>
+[Audio Feature](#audio-setup)<br>
 **See how we setup and prepared our audio*
 
 <br>
@@ -111,7 +111,7 @@ The Raspberry Pi sends audio out using the 3.5mm audio jack to our audio mixer w
 <br>
 We then have a lighting console which is manually operated.
 
-Note that the lighting console is standalone for now.
+Note that the lighting console is standalone.
 ```mermaid
 graph LR
 
@@ -278,7 +278,7 @@ Now after connecting, we have successfully established remote control to the ras
 <br>
 
 
-# **Installing libraries**
+# **Installing Libraries**
 
 To install the required libraries on our Raspberry Pi 4, we would need to open the terminal.
 
@@ -293,11 +293,10 @@ Firstly, update and upgrade your Raspberry Pi 4 using ```sudo apt update``` and 
 
 <br>
 
+---
 ### **MQTT**
 ---
 To allow the Raspberry Pi 4 to publish a message to the broker pi, we would need to install the following;
-
-
 
 #### Installing the MQTT client
 ```sudo apt install -y mosquitto-clients```
@@ -305,12 +304,14 @@ To allow the Raspberry Pi 4 to publish a message to the broker pi, we would need
 #### Install python MQTT script 
 ``` sudo pip3 install paho-mqtt```
 
+---
 ### **Pillow**
 ---
 To allow our Raspberry Pi to do basic image processing, we would need to install the PIL (pillow) library. To install the library,
 <br>
 ```pip install pillow``` or ```python3 -m pip install pillow```
 
+---
 ### **Pydub**
 ---
 Installing the pydub library allows us to play, merge and edit our .wav audio files. To install the library,
@@ -320,11 +321,10 @@ Installing the pydub library allows us to play, merge and edit our .wav audio fi
 
 ---
 
-
 <br>
 
 # Lights and Audio Preparation
-After you have got your Raspberry Pi setup ready, we can start lights and audio creations.
+After you have got your Raspberry Pi setup ready, we can now start with our lights and audio creations.
 
 ---
 ## **Lighting Setup:**
@@ -1238,5 +1238,5 @@ Meanwhile, the other person at the audio section will attend to the mixer to adj
 
 <br>
 
-# Enjoy Our Show!<3
+# Enjoy Our Show!<3 uwu
 
