@@ -22,32 +22,36 @@ We want to showcase the emotions and feelings of the story through the lights an
 *Picture of the Polarizer Panel*
 
 - This is the polarizer panel which will be used to display our pixelized images.
-- Each one of the disc is a polarizing film which is being controlled by a servo motors which receive instructions from the micro-controllers.
+- Each one of the disc is a polarizing film which is being controlled by servo motors which receive instructions from the micro-controllers.
 - In front of each panel will be another piece of polarizer film.
-- When the discs turn, the different angles of the 2 polarizers will slowly block out lights (0° is white, 90° is black), showing different shades of grey.
+- When the discs turn, the different angles of the 2 polarizers will slowly block out lights, showing different shades of grey. (0° is full white, 90° is full black)
 
 ---
 
 # Understanding the Pixel Tint System
 
-In this system, we use a publish-subscribe network protoccol called "MQTT".
+In this system, we used a publish-subscribe network protocol called "MQTT".
 
 <br>
 This is so that it is possible for us to send different images to display out into the polarising panel
 
 <br>
+
 So in this scenario,
 
 <br>
 
 - Our Raspberry Pi(client) would be publishing to a Broker Pi.
 - When our Group Pi publishes to the Broker Pi, the micro-controllers behind the panel will then be subscribed to the data being received from the Broker Pi.
-- We ensured that the Broker Pi is in the same network as our Raspberry Pi(client), as well as the micro-controllers to be able to publish and be displayed out onto the Pixel Tint Panel.
+- We ensured that the Broker Pi is in the same network as our Raspberry Pi(client), as well as the micro-controllers to be able to publish and be displayed out images onto the Pixel Tint Panel.
 
 ---
 
 # Our Features
 ## What it consists of:
+
+<br>
+
 **1. Main GUI** 
 ![alt text](diagram/maingui.png)<br>
 *Screenshot of our GUI*
@@ -82,7 +86,7 @@ So in this scenario,
 <br>
 
 [Lighting Feature](#lighting-setup)<br>
-**See how we setup and prepared out lights*
+**See how we setup and prepared our lights*
 <br>
 
 **3. Audio**
@@ -92,14 +96,20 @@ So in this scenario,
 <br>
 
 [Lighting Feature](#audio-setup)<br>
-**See how we setup and prepared out audio*
+**See how we setup and prepared our audio*
 
 <br>
 
 # **System Diagrams**
 
 ## **Communication of Hardware** 
-The graph below shows the way our devices communicate with each other. We have our laptop used for VNC for the Raspberry Pi 4 to take control of our Graphical User-Interface. The Raspberry Pi sends audio out using the 3.5mm audio jack to our audio mixer which sends the signal out to our speakers. We then have a lighting console which is manually operated.
+The graph below shows the way our devices communicate with each other.
+<br>
+We have our laptop used for VNC for the Raspberry Pi 4 to take control of our Graphical User-Interface. 
+<br>
+The Raspberry Pi sends audio out using the 3.5mm audio jack to our audio mixer which sends the signal out to our speakers. 
+<br>
+We then have a lighting console which is manually operated.
 
 Note that the lighting console is standalone for now.
 ```mermaid
