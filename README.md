@@ -6,10 +6,27 @@ Our feature is about a captivating story of a couple's journey together and taki
 
 <br>
 
-From our conducted research, we have realised that in this generation many audiences are more commonly drawn to drama and films these days. An example would be the popular K-Drama Series Business Proposal or the Western Series Never Have I Ever. Majority of which includes romantic genre's. Our show consists just that with a hint of comedy to entice our audiences. Therefore, we are aiming for teenagers and adults ranging from 13-21 year old to witness our show, or anyone in general. So that they could have something to relate to or just appreciate the artwork.
+From our conducted research, we have realised that in this generation many audiences are more commonly drawn to drama and films these days. An example would be the popular K-Drama Series "Business Proposal" or the Western Series "Crazy Rich Asians". Majority of which includes romantic genre's. Our show consists just that with a hint of comedy to entice our audiences. 
+
 <br>
 
-We want to showcase the emotions and feelings of the story through the lights and audio, and having the visuals from our very own pixelated images displayed out to the Pixel Tint Panel.
+We are aiming for teenagers and adults ranging from 13-21 year old to witness our show, or anyone in general. So that they could have something to relate to or just appreciate the artwork.
+
+<br>
+
+![alt text](diagram/statistics.png)<br>
+*Data graph from the-numbers.com*
+
+**Link:** https://www.the-numbers.com/market/genres
+
+The statistics shows that the genre "Drama" and "Romantic Comedy" have a high value based on total movie box offices in North America.
+
+<br>
+This shows us that they are a very popular genre
+
+<br>
+
+Therefore, We want to showcase the emotions and feelings of the story through the lights and audio, and having the visuals from our very own pixelated images displayed out to the Pixel Tint Panel.
 
 <br>
 
