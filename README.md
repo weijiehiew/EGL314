@@ -41,8 +41,8 @@ So in this scenario,
 <br>
 
 - Our Raspberry Pi(client) would be publishing to a Broker Pi.
-- When our Group Pi publishes to the Broker Pi, the Broker Pi will then subscribe to the micro-controllers behind the panels
-- We ensured that the Broker Pi is in the same network as our Raspberry Pi(client), as well as the micro-controllers to be able to publish
+- When our Group Pi publishes to the Broker Pi, the micro-controllers behind the panel will then be subscribed to the data being received from the Broker Pi.
+- We ensured that the Broker Pi is in the same network as our Raspberry Pi(client), as well as the micro-controllers to be able to publish and be displayed out onto the Pixel Tint Panel.
 
 ---
 
