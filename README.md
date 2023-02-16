@@ -382,6 +382,8 @@ Note: Our Timeline show is at Page 3, Fader 6
 
 ---
 
+<br>
+
 ## **Audio Setup:**
 ### **Hardware:**
 
@@ -433,6 +435,14 @@ To create our show background track, we installed the software **Audacity**
 We compiled the above tracks all into one **wav** file.
 
 # Story Planning
+
+<br>
+Before producing a show, it is important that we do pre-production film.
+
+<br>
+
+Here were the steps of our pre-show planning.
+<br>
 
 1. We searched for pictorial images that would be best suited for our love storytelling show.
 <br>
