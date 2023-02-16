@@ -426,6 +426,123 @@ To create our show background track, we installed the software **Audacity**
 
 We compiled the above tracks all into one **wav** file.
 
+# Story Planning
+
+1. We searched for pictorial images that would be best suited for our love storytelling show.
+<br>
+![alt text](diagram/pictorialimage.png)<br>
+*Pictorial Imgaes we found in google*
+
+<br>
+2.We discussed which pictogram we will used and narrow it down to 16 images
+<br>
+
+![alt text](diagram/16images.png)<br>
+*The final 16 images we utilized*
+
+<br>
+3. Next we will need to plan out our story. Hence, we used an excel file to create a storyboard
+<br>
+
+![alt text](diagram/storyplan.png)<br>
+*Google Sheet of the sequence planned out in order*
+
+<br>
+4.In the show, we realized that displaying the images on the panel itself does not fully express the storyline as good. Therefore, we decided to have a voice narration.
+<br>
+A script was developed as well.
+
+```
+~314 TEAM DUMBOS SCRIPT~
+
+SCENE 1, INTRODUCTION, BLANK WHITE IMAGE:
+
+hi im jenna i am group D's spirit human. Let's start this wonderful story shall we.
+
+SCENE 1, IMAGE 1:
+
+on a heavy storm, a guy stumbles upon a girl drenched from the rain. he wondered what a beautiful girl like her would be standing all alone in the rain?
+
+SCENE 1, IMAGE 2:
+
+he decided to offer his umbrella to her as a nice gesture like omg what a gentleman yes. get you a man like this for realz.
+
+SCENE 2, IMAGE 3:
+
+so then that made them exchanged numbers and started chatting online everyday. and every day i mean like they were literally so obsessed with each other and can't stop video calling and texting all day long.
+
+can never be me but yall stay safe though.
+
+SCENE 2, IMAGE 4:
+
+A first date finally happened after a few weeks of talking and getting to know each other. they ate heartedly and said corny pick up lines to each other all night.
+
+SCENE 3, IMAGE 5:
+
+after dinner, I guess the guy was feeling extra and goofy because he just suddenly and randomly got on his knee like he was going to propose and asked her to be his official girlfriend.
+
+SCENE 3, IMAGE 6:
+
+that's cute..... and she said yes woooohooooooooo. im rooting for them let's go
+
+SCENE 3, IMAGE 7:
+
+after that wholesome moment together, they got into their car and.......uh. did whatever you are all thinking about right now. just kidding
+
+SCENE 4, BLANK SCREEN:
+
+Anyways that is not the end folks. u really thought huh.
+
+SCENE 5, IMAGE 8:
+
+Months into their relationship multiple turf wars begun between the both of them. things like small petty arguments about not being able to walk the fish or eating each other's chinese leftovers without permission. pretty nonsensical things like that.
+
+SCENE 5, IMAGE 9:
+
+But Literally though because their fights just got so progressively heated that she for real had got him on his knees it's that bad
+
+SCENE 5, IMAGE 10:
+
+Until eventually they broke it off. sad face emoji heartbroken emoji crying emoji sighing emoji emo boy emoji.
+
+SCENE 5, IMAGE 11:
+
+mans look so broken here. aww it's ok there's plenty of fishes in the sea like.. I don't know
+
+me?
+
+SCENE 6, BLANK SCREEN:
+
+ hashtag jk im just playing i don't even like men Anyways i got carried away let's get back to the story.
+
+SCENE 7, IMAGE 12:
+
+There was a party one night in the summer and lo and behold the two of them just so happened to be in the same party AND circle of friends. imagine how awkward that would be yikes.
+
+SCENE 7, IMAGE 13:
+
+after a while, the guy pulls his ex off to one side and wanted to talk through things with her about how he truly misses her and that he is a changed man and will never be a bad boyfriend again.
+
+SCENE 7, IMAGE 14:
+
+but miss girl wasn't having it. and oh my god here he goes kneeling down on his knees again smacking my head. why is he always on the floor?
+
+SCENE 8, IMAGE 15:
+
+Ok but anyways I guess his charm worked her like some voodoo witch craft because here she is giggling and forgiving him so fast. they are literally so funny bye.
+
+SCENE 8, IMAGE 16:
+
+In the end they both got married and grew old together im so happy for them. aww look at them just like how they first met under his umbrella. 
+
+SCENE 9, END SCREEN:
+
+the end
+```
+
+5. Finally, we combined the sequence images, light and audio together.
+
+
 # Code Explanation
 **Importing of Libraries**
 <br>
