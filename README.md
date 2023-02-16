@@ -450,7 +450,7 @@ We compiled the above tracks all into one **wav** file.
 <br>
 4.In the show, we realized that displaying the images on the panel itself does not fully express the storyline as good. Therefore, we decided to have a voice narration.
 <br>
-A script was developed as well.
+A script was then developed.
 
 ```
 ~314 TEAM DUMBOS SCRIPT~
