@@ -436,6 +436,7 @@ We compiled the above tracks all into one **wav** file.
 
 1. We searched for pictorial images that would be best suited for our love storytelling show.
 <br>
+
 ![alt text](diagram/pictorialimage.png)<br>
 *Pictorial Imgaes we found in google*
 
