@@ -377,6 +377,7 @@ The lights are being controlled manually in a console. Hence, it is a separate s
 <br>
 
 ## *Our Lighting Show file is in our "Resources" file named **"TeamDumbos Show.zip"**
+Note: Our Timeline show is at Page 3, Fader 6
 <br>
 
 ---
