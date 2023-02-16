@@ -1379,5 +1379,9 @@ Meanwhile, the other person at the audio section will attend to the mixer to adj
 
 <br>
 
+Watch our show here -> 
+
+<br>
+
 # Enjoy Our Show!<3 uwu
 
