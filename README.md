@@ -1365,7 +1365,15 @@ After installing the relevant modules, open Raspberry Pi terminal and clone the 
 
 To run the GUI python file in the terminal:
 
-```python3 /home/pi/EGL314/main.py```
+```Open Terminal in Raspberry Pi```
+<br>
+Type:
+<br>
+```cd EGL314```
+<br>
+After that type in:
+<br>
+```python3 main.py```
 
 ## Showtime Rundown
 ---
