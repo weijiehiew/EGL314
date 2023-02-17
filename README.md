@@ -376,7 +376,7 @@ The lights are being controlled manually in a console. Hence, it is a separate s
 
 <br>
 
-## *Our Lighting Show file is in our "Resources" file named **"TeamDumbos Show.zip"**
+## *Our Lighting Show file is in the GitHub File "Lighting Show" named **"TeamDumbos Show.zip"**
 Note: Our Timeline show is at Page 3, Fader 6
 <br>
 
@@ -1398,7 +1398,7 @@ Meanwhile, the other person at the audio section will attend to the mixer to adj
 
 <br>
 
-To watch our full show click here!! -> https://drive.google.com/file/d/1kF9l-rIK8iWLdK21iN_rhsGu4YOusqYh/view?usp=share_link
+Watch our full show  by click here!! -> https://drive.google.com/file/d/1kF9l-rIK8iWLdK21iN_rhsGu4YOusqYh/view?usp=share_link
 
 <br>
 
