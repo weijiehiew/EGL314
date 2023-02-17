@@ -437,7 +437,7 @@ We compiled the above tracks all into one **wav** file.
 # Story Planning
 
 <br>
-Before producing a show, it is important that we do pre-production film.
+Before producing a show, it is important that we do a pre-production process.
 
 <br>
 
@@ -465,7 +465,7 @@ Here were the steps of our pre-show planning.
 *Google Sheet of the sequence planned out in order*
 
 <br>
-4.In the show, we realized that displaying the images on the panel itself does not fully express the storyline as good. Therefore, we decided to have a voice narration.
+4.In the show, we realized that displaying the images on the panel itself does not fully express the storyline we were trying to convey to our audience. Therefore, we decided to have a voice narration.
 <br>
 A script was then developed.
 
@@ -554,8 +554,9 @@ In the end they both got married and grew old together im so happy for them. aww
 
 SCENE 9, END SCREEN:
 
-the end
+the end 
 ```
+
 
 5. Finally, we combined the sequence images, light and audio together.
 
@@ -1362,7 +1363,7 @@ After installing the relevant modules, open Raspberry Pi terminal and clone the 
 
 ```git clone https://github.com/weijiehiew/EGL314.git```
 
-To run the GUI python file:
+To run the GUI python file in the terminal:
 
 ```python3 /home/pi/EGL314/main.py```
 
@@ -1389,7 +1390,7 @@ Meanwhile, the other person at the audio section will attend to the mixer to adj
 
 <br>
 
-Watch our show here -> 
+To watch our full show click here!! -> https://drive.google.com/file/d/1kF9l-rIK8iWLdK21iN_rhsGu4YOusqYh/view?usp=share_link
 
 <br>
 
